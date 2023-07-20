@@ -4,7 +4,8 @@
 사용자는 프롬프트와 이미지 크기를 입력하여 AI가 이미지를 생성하도록 요청하고  
 서버는 OpenAI API를 사용하여 이미지를 생성하고, 생성된 이미지의 URL을 클라이언트에게 응답으로 반환하는 프로그램  
 
-controllers/openaiController.js: OpenAI 관련 로직을 처리하는 컨트롤러 파일이 위치 -> routes 파일에서 보낸 request의 데이터를 확인하여 알맞은 response보냄  
+controllers/openaiController.js: OpenAI 관련 로직을 처리하는 컨트롤러 파일이 위치    
+                                  -> routes 파일에서 보낸 request의 데이터를 확인하여 알맞은 response보냄  
 routes/: OpenAI API와 관련된 라우팅을 처리하는 라우터 파일이 위치(url관리) -> 컨트롤러에 request(post, get)을 전달  
 public/: 정적 파일(이미지 등)이 위치하는 폴더(asset-img,css,js등 모아둔 곳)  
 views/: 뷰 템플릿 파일(ejs)이 위치하는 폴더 (클라이언트에 응답 보낼때 html코드로 변환해서 반환)  
